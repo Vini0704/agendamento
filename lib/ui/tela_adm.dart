@@ -15,21 +15,7 @@ class TelaAdmin extends StatelessWidget {
               onPressed: () {
                
               },
-              child: const Text('Gerenciar Agendamentos'),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {
-                
-              },
-              child: const Text('Gerenciar Usuários'),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {
-                
-              },
-              child: const Text('Gerenciar Serviços'),
+              child: const Text('Meus Agendamentos'),
             ),
           ],
         ),

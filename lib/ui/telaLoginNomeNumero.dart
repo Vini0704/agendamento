@@ -19,7 +19,7 @@ class _TelaLoginNomeNumeroState extends State<TelaLoginNomeNumero> {
 
   void _fazerLogin() {
     if (_formKey.currentState!.validate()) {
-      Navigator.pushReplacementNamed(context, 'inicio');
+      Navigator.pushReplacementNamed(context, 'admin');
     }
   }
 
@@ -34,19 +34,11 @@ class _TelaLoginNomeNumeroState extends State<TelaLoginNomeNumero> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey[900],
-        title: const Text('Login'),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pushNamed(context, 'admin');
-            },
-            child: Text(
-              'Área Admin',
-              style: TextStyle(color: Theme.of(context).colorScheme.onPrimary),
-            ),
-          ),
-        ],
+  backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+  title: const Text(
+    'Login',
+    style: TextStyle(color: Colors.white),
+  ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

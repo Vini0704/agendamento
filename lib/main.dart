@@ -23,13 +23,14 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [Locale('pt', 'BR')],
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const TelaLoginNomeNumero(),
-        'inicio': (context) => const TelaInicio(),
-        'novo_agendamento': (context) => const TelaNovoAgendamento(),
-        'admin': (context) => const TelaAdmin(), 
-      },
+      initialRoute: 'inicio',
+        routes: {
+           '/': (context) => const TelaLoginNomeNumero(),
+           'inicio': (context) => const TelaInicio(),
+            'novo_agendamento': (context) => const TelaNovoAgendamento(),
+            'admin': (context) => const TelaAdmin(),
+     },
+
     );
   }
 }
